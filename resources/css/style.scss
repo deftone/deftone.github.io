@@ -1,0 +1,332 @@
+// GENERAL: VARIABLES
+
+//colors
+$color_1-light: hsl(120, 80%, 70%);
+$color_1-medium: hsl(120, 100%, 40%);
+$color_1-dark: hsl(120, 100%, 30%);
+$color_1-night: hsl(120, 100%, 20%);
+// $color_2-white: hsl(200,100%, 90%);
+// $color_2-light: hsl(200,100%, 70%);
+// $color_2-medium: hsl(200, 100%, 50%);
+// $color_2-dark: hsl(200, 100%, 35%);
+
+$color_2-white: hsl(36,100%, 90%);
+$color_2-light: hsl(36,100%, 70%);
+$color_2-medium: hsl(36, 100%, 50%);
+$color_2-dark:  hsl(36, 100%, 35%);
+$color_2-night: hsl(36, 100%, 20%);
+
+
+//sizes
+$breakpoint_medium: 850px;
+// $breakpoint_small: /
+// TODO: checken was davon benoetigt wird:
+$max-width: 700px;
+$shadow_small: 2px;
+$shadow_medium: 3px;
+$shadow_large: 5px;
+$shadow_huge: 10px;
+$duration_short: .5s;
+$duration_medium: 1s;
+$duration_long: 2s;
+
+html{
+  font-size: 10px; //1rem=10px
+}
+
+body{
+  font-family: 'Muli', Helvetica, sans-serif;
+  font-size: 1.8rem;
+}
+
+.spezialFont{
+  font-family: 'Pacifico', cursive;
+}
+
+a{
+  text-decoration: none;
+}
+
+p{
+  font-size: 1.8rem;
+  line-height: 2.2rem;
+}
+
+h1, h2, h3{
+  font-weight: bold;
+}
+
+h4, h5, h6{
+  font-weight: normal;
+}
+
+h1, h4{
+  font-size: 5rem;
+  line-height: 5.5rem;
+}
+
+h2, h5{
+  font-size: 3rem;
+  line-height: 3.5rem;
+}
+
+h3, h6{
+  font-size: 2rem;
+  line-height: 2.5rem;
+}
+
+main{
+  top: 6rem;
+  position: relative;
+}
+
+@media only screen and (max-width: $breakpoint_medium) {
+  #hidden_mobile{
+    display: none;
+  }
+}
+
+@media only screen and (min-width: $breakpoint_medium) {
+  #hidden_desktop{
+    display: none;
+  }
+}
+
+/*** GENERAL: NAVIGATION ***/ //dropdown: https://devopsworld.de/319
+nav{
+  a{
+    display:block;
+    background-color: $color_2-medium;
+    color:$color_1-night;
+    font-weight: bold;
+    width:15rem;
+    padding:8px 20px 8px 22px;
+    border-radius: 1rem;
+    border: 1px solid $color_1-light;
+    margin-right:1.5rem;
+    &:last-child{
+      margin-right: 1.6rem;
+    }
+    // TODO: colors hover und active!
+    &:hover{
+      color: $color_2-light;
+      background-color: $color_2-dark;
+      text-decoration: none;
+      // NOTE: this does not work yet...
+      box-shadow: 0 0 $shadow_small $color_1-dark;
+      box-shadow: 0 0 3px rgba(0, 0, 0, 0.5);
+    }
+    &:active{
+      color: $color_2-medium;
+      background-color: $color_1-dark;
+    }
+  }
+  li {
+    float:left;
+    a{
+      text-align:center;
+    }
+    li{
+      float: none;
+      a{
+        text-align:left;
+        border-top:none;
+      }
+    }
+  }
+  ul ul{
+    display:none;
+    position:absolute;
+    z-index:999;
+  }
+  i{
+    padding: 1rem;
+    color: $color_2-light;
+    cursor: pointer;
+  }
+}
+
+/*** HEADER ***/
+header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: $color_1-dark;
+  height: 6rem;
+  position: fixed;
+  width: 100%;
+  z-index: 20;
+  border: 1px solid $color_1-dark;
+
+  .spezialFont{
+    display: inline-block;
+    font-weight: bold;
+    font-size: 4rem;
+    height: 2.5rem;
+    padding: .5rem;
+    padding-left: 2rem;
+    color: $color_2-light;
+    text-shadow:
+    -1px -1px 0 $color_1-night,
+     1px -1px 0 $color_1-night,
+    -1px  1px 0 $color_1-night,
+     1px  1px 0 $color_1-night;
+  }
+}
+
+/*** JUMBOTRON ***/
+#jumbotron{
+  height: 90rem;
+  background-image: url("../images/jumbotron2.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+/*** PROJECTS ***/
+#projects{
+  //hack to make the "start learning" button jump to the correct position
+  position: relative;
+  margin-top:-6rem;
+  padding-top:6rem;
+  // z-index:-1; <- that makes the hover disabled, better: transparent background
+  background-color: transparent;
+
+  .container_project{
+    background-color: $color_2-light;
+  }
+
+  .spezialFont{
+    background-color: $color_2-light;
+    padding: 2rem;
+    padding-bottom: 3rem;
+    // text-align: center;
+    color: $color_1-night;
+    margin: 0;
+  }
+
+  .subcontainer_project{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 0 5.6rem;
+  }
+
+  .container_project_box{
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    border-radius: 1rem;
+    width: 30%;
+    //margin outside the box
+    margin: 0 1.6rem 3.6rem 1.6rem;
+    color: $color_2-night;
+    background-color: $color_1-light;
+    transition-duration: $duration_medium;
+
+
+    .container_image{
+      img{
+        height: auto;
+        width: auto;
+        max-width: 100%;
+        max-height: 100%;
+        border-radius: 1rem;
+        width: 100%;
+      }
+    }
+    h2, p{
+      padding-left: 2rem;
+      transition-duration: $duration_medium;
+    }
+    &:hover{
+      background-color: $color_1-dark;
+      box-shadow: $shadow_huge $shadow_huge $shadow_large $color_2-dark;
+      h2,p{
+        color: white;
+      }
+      // auch das hilft nicht :( textdecoration ist noch immer da :(
+      a:-webkit-any-link{
+        text-decoration: none;
+      }
+    }
+  }
+}
+
+
+/*ABOUT ME*/
+#about{
+  //hack to make the "start learning" button jump to the correct position
+  position: relative;
+  margin-top:-6rem;
+  padding-top:6rem;
+  // z-index:-1; <- that makes the hover disabled, better: transparent background
+  background-color: transparent;
+
+  .container_about{
+    background-color: $color_2-medium;
+  }
+
+  .spezialFont{
+    background-color: $color_2-medium;
+    padding: 2rem;
+    padding-bottom: 3rem;
+    // text-align: center;
+    color: $color_1-medium;
+    margin: 0;
+  }
+
+
+  img{
+    width: auto;
+    height: auto;
+    max-width: 100%;
+    max-height: 100%;
+  }
+
+  p{
+    padding: 2rem;
+  }
+}
+
+
+/*CONTACT*/
+#contact{
+  //hack to make the "start learning" button jump to the correct position
+  position: relative;
+  margin-top:-6rem;
+  padding-top:6rem;
+  // z-index:-1; <- that makes the hover disabled, better: transparent background
+  background-color: transparent;
+
+  .container_contact{
+    background-color: $color_2-dark;
+  }
+
+  .spezialFont{
+    padding: 2rem;
+    padding-bottom: 3rem;
+    // text-align: center;
+    color: $color_1-light;
+    margin: 0;
+  }
+
+  p{
+    // display: inline-block;
+    font-size: 2rem;
+  }
+}
+
+footer{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 8rem;
+  background-color: $color_2-night;
+
+  i{
+    color: $color_2-white;
+    padding: 2rem;
+  }
+}
