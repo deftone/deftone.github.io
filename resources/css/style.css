@@ -46,25 +46,24 @@ main {
 /*** GENERAL: NAVIGATION ***/
 nav a {
   display: block;
-  background-color: #ff9900;
-  color: #006600;
+  background-color: #FB8C00;
+  color: #33691E;
   font-weight: bold;
-  width: 15rem;
+  width: 11rem;
   padding: 8px 20px 8px 22px;
   border-radius: 1rem;
-  border: 1px solid #75f075;
+  border: 1px solid #33691E;
   margin-right: 1.5rem; }
   nav a:last-child {
     margin-right: 1.6rem; }
   nav a:hover {
-    color: #ffc266;
-    background-color: #b36b00;
-    text-decoration: none;
-    box-shadow: 0 0 2px #009900;
-    box-shadow: 0 0 3px rgba(0, 0, 0, 0.5); }
+    background-color: #FB8C00;
+    color: #FFE0B2;
+    border: 1px solid #FFE0B2; }
   nav a:active {
-    color: #ff9900;
-    background-color: #009900; }
+    background-color: #FB8C00;
+    color: #993600;
+    border: 1px solid #993600; }
 nav li {
   float: left; }
   nav li a {
@@ -78,22 +77,34 @@ nav ul ul {
   display: none;
   position: absolute;
   z-index: 999; }
-nav i {
-  padding: 1rem;
-  color: #ffc266;
-  cursor: pointer; }
 
+@media only screen and (max-width: 850px) {
+  i {
+    padding: 1rem;
+    padding-right: 2rem;
+    color: #FFA726;
+    cursor: pointer; }
+
+  nav li {
+    float: none; }
+
+  .menu_items {
+    position: absolute;
+    right: 0rem; }
+
+  .hidden {
+    display: none; } }
 /*** HEADER ***/
 header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #009900;
+  background-color: #558B2F;
   height: 6rem;
   position: fixed;
   width: 100%;
   z-index: 20;
-  border: 1px solid #009900; }
+  border: 1px solid #558B2F; }
   header .spezialFont {
     display: inline-block;
     font-weight: bold;
@@ -101,8 +112,8 @@ header {
     height: 2.5rem;
     padding: .5rem;
     padding-left: 2rem;
-    color: #ffc266;
-    text-shadow: -1px -1px 0 #006600, 1px -1px 0 #006600, -1px 1px 0 #006600, 1px 1px 0 #006600; }
+    color: #FFA726;
+    text-shadow: -1px -1px 0 #33691E, 1px -1px 0 #33691E, -1px 1px 0 #33691E, 1px 1px 0 #33691E; }
 
 /*** JUMBOTRON ***/
 #jumbotron {
@@ -119,12 +130,12 @@ header {
   padding-top: 6rem;
   background-color: transparent; }
   #projects .container_project {
-    background-color: #ffc266; }
+    background-color: #FFA726; }
   #projects .spezialFont {
-    background-color: #ffc266;
+    background-color: #FFA726;
     padding: 2rem;
     padding-bottom: 3rem;
-    color: #006600;
+    color: #33691E;
     margin: 0; }
   #projects .subcontainer_project {
     display: flex;
@@ -139,9 +150,10 @@ header {
     border-radius: 1rem;
     width: 30%;
     margin: 0 1.6rem 3.6rem 1.6rem;
-    color: #663d00;
-    background-color: #75f075;
-    transition-duration: 1s; }
+    color: #33691E;
+    background-color: #7CB342;
+    transition-duration: 1s;
+    border: 2px solid #33691E; }
     #projects .container_project_box .container_image img {
       height: auto;
       width: auto;
@@ -150,15 +162,13 @@ header {
       border-radius: 1rem;
       width: 100%; }
     #projects .container_project_box h2, #projects .container_project_box p {
-      padding-left: 2rem;
+      margin: 1rem .5rem 1rem 2rem;
       transition-duration: 1s; }
     #projects .container_project_box:hover {
-      background-color: #009900;
-      box-shadow: 10px 10px 5px #b36b00; }
+      background-color: #558B2F;
+      box-shadow: 0 0 15rem rgba(0, 0, 0, 0.9); }
       #projects .container_project_box:hover h2, #projects .container_project_box:hover p {
         color: white; }
-      #projects .container_project_box:hover a:-webkit-any-link {
-        text-decoration: none; }
 
 /*ABOUT ME*/
 #about {
@@ -167,12 +177,12 @@ header {
   padding-top: 6rem;
   background-color: transparent; }
   #about .container_about {
-    background-color: #ff9900; }
+    background-color: #FB8C00; }
   #about .spezialFont {
-    background-color: #ff9900;
+    background-color: #FB8C00;
     padding: 2rem;
     padding-bottom: 3rem;
-    color: #00cc00;
+    color: #7CB342;
     margin: 0; }
   #about img {
     width: auto;
@@ -189,11 +199,11 @@ header {
   padding-top: 6rem;
   background-color: transparent; }
   #contact .container_contact {
-    background-color: #b36b00; }
+    background-color: #E65100; }
   #contact .spezialFont {
     padding: 2rem;
     padding-bottom: 3rem;
-    color: #75f075;
+    color: #9CCC65;
     margin: 0; }
   #contact p {
     font-size: 2rem; }
@@ -203,9 +213,9 @@ footer {
   align-items: center;
   justify-content: center;
   height: 8rem;
-  background-color: #663d00; }
+  background-color: #993600; }
   footer i {
-    color: #ffebcc;
+    color: #FFE0B2;
     padding: 2rem; }
 
 /*# sourceMappingURL=style.css.map */

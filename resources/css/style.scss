@@ -1,20 +1,34 @@
 // GENERAL: VARIABLES
 
 //colors
-$color_1-light: hsl(120, 80%, 70%);
-$color_1-medium: hsl(120, 100%, 40%);
-$color_1-dark: hsl(120, 100%, 30%);
-$color_1-night: hsl(120, 100%, 20%);
+//green
+// $color_1-light: hsl(120, 80%, 70%);
+// $color_1-medium: hsl(120, 100%, 40%);
+// $color_1-dark: hsl(120, 100%, 30%);
+// $color_1-night: hsl(120, 100%, 20%);
+$color_1-light: #9CCC65;
+$color_1-medium: #7CB342;
+$color_1-dark: #558B2F;
+$color_1-night: #33691E;
+
+
+//blue
 // $color_2-white: hsl(200,100%, 90%);
 // $color_2-light: hsl(200,100%, 70%);
 // $color_2-medium: hsl(200, 100%, 50%);
 // $color_2-dark: hsl(200, 100%, 35%);
 
-$color_2-white: hsl(36,100%, 90%);
-$color_2-light: hsl(36,100%, 70%);
-$color_2-medium: hsl(36, 100%, 50%);
-$color_2-dark:  hsl(36, 100%, 35%);
-$color_2-night: hsl(36, 100%, 20%);
+//orange
+// $color_2-white: hsl(36,100%, 90%);
+// $color_2-light: hsl(36,100%, 70%);
+// $color_2-medium: hsl(36, 100%, 50%);
+// $color_2-dark:  hsl(36, 100%, 35%);
+// $color_2-night: hsl(36, 100%, 20%);
+$color_2-white: #FFE0B2;
+$color_2-light: #FFA726;
+$color_2-medium: #FB8C00;
+$color_2-dark:  #E65100;
+$color_2-night: 	 #993600;
 
 
 //sizes
@@ -99,26 +113,23 @@ nav{
     background-color: $color_2-medium;
     color:$color_1-night;
     font-weight: bold;
-    width:15rem;
+    width:11rem;
     padding:8px 20px 8px 22px;
     border-radius: 1rem;
-    border: 1px solid $color_1-light;
+    border: 1px solid $color_1-night;
     margin-right:1.5rem;
     &:last-child{
       margin-right: 1.6rem;
     }
-    // TODO: colors hover und active!
     &:hover{
-      color: $color_2-light;
-      background-color: $color_2-dark;
-      text-decoration: none;
-      // NOTE: this does not work yet...
-      box-shadow: 0 0 $shadow_small $color_1-dark;
-      box-shadow: 0 0 3px rgba(0, 0, 0, 0.5);
+      background-color: $color_2-medium;
+      color: $color_2-white;
+      border: 1px solid $color_2-white;
     }
     &:active{
-      color: $color_2-medium;
-      background-color: $color_1-dark;
+      background-color: $color_2-medium;
+      color: $color_2-night;
+      border: 1px solid $color_2-night;
     }
   }
   li {
@@ -139,12 +150,27 @@ nav{
     position:absolute;
     z-index:999;
   }
+}
+
+@media only screen and (max-width: $breakpoint_medium) {
   i{
     padding: 1rem;
+    padding-right: 2rem;
     color: $color_2-light;
     cursor: pointer;
   }
+  nav li{
+    float: none;
+  }
+  .menu_items{
+    position: absolute;
+    right: 0rem;
+  }
+  .hidden{
+    display: none;
+  }
 }
+
 
 /*** HEADER ***/
 header{
@@ -185,7 +211,7 @@ header{
 
 /*** PROJECTS ***/
 #projects{
-  //hack to make the "start learning" button jump to the correct position
+  //hack to make the menu button jump to the correct position
   position: relative;
   margin-top:-6rem;
   padding-top:6rem;
@@ -221,9 +247,11 @@ header{
     width: 30%;
     //margin outside the box
     margin: 0 1.6rem 3.6rem 1.6rem;
-    color: $color_2-night;
-    background-color: $color_1-light;
+    // color: $color_2-night;
+    color: $color_1-night;
+    background-color: $color_1-medium;
     transition-duration: $duration_medium;
+    border: 2px solid $color_1-night;
 
 
     .container_image{
@@ -237,18 +265,14 @@ header{
       }
     }
     h2, p{
-      padding-left: 2rem;
+      margin: 1rem .5rem 1rem 2rem;
       transition-duration: $duration_medium;
     }
     &:hover{
       background-color: $color_1-dark;
-      box-shadow: $shadow_huge $shadow_huge $shadow_large $color_2-dark;
+      box-shadow: 0 0 15rem rgba(0, 0, 0, 0.9);
       h2,p{
         color: white;
-      }
-      // auch das hilft nicht :( textdecoration ist noch immer da :(
-      a:-webkit-any-link{
-        text-decoration: none;
       }
     }
   }
@@ -257,7 +281,7 @@ header{
 
 /*ABOUT ME*/
 #about{
-  //hack to make the "start learning" button jump to the correct position
+  //hack to make the menu button jump to the correct position
   position: relative;
   margin-top:-6rem;
   padding-top:6rem;
