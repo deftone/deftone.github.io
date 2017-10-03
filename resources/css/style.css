@@ -136,7 +136,8 @@ header {
     padding: 2rem;
     padding-bottom: 3rem;
     color: #33691E;
-    margin: 0; }
+    margin: 0;
+    text-shadow: -1px -1px 0 #9CCC65, 1px -1px 0 #9CCC65, -1px 1px 0 #9CCC65, 1px 1px 0 #9CCC65; }
   #projects .subcontainer_project {
     display: flex;
     justify-content: center;
@@ -183,7 +184,8 @@ header {
     padding: 2rem;
     padding-bottom: 3rem;
     color: #7CB342;
-    margin: 0; }
+    margin: 0;
+    text-shadow: -1px -1px 0 #33691E, 1px -1px 0 #33691E, -1px 1px 0 #33691E, 1px 1px 0 #33691E; }
   #about img {
     width: auto;
     height: auto;
@@ -204,7 +206,8 @@ header {
     padding: 2rem;
     padding-bottom: 3rem;
     color: #9CCC65;
-    margin: 0; }
+    margin: 0;
+    text-shadow: -1px -1px 0 #33691E, 1px -1px 0 #33691E, -1px 1px 0 #33691E, 1px 1px 0 #33691E; }
   #contact p {
     font-size: 2rem; }
 

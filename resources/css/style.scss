@@ -229,6 +229,11 @@ header{
     // text-align: center;
     color: $color_1-night;
     margin: 0;
+    text-shadow:
+    -1px -1px 0 $color_1-light,
+     1px -1px 0 $color_1-light,
+    -1px  1px 0 $color_1-light,
+     1px  1px 0 $color_1-light;
   }
 
   .subcontainer_project{
@@ -299,6 +304,11 @@ header{
     // text-align: center;
     color: $color_1-medium;
     margin: 0;
+    text-shadow:
+    -1px -1px 0 $color_1-night,
+     1px -1px 0 $color_1-night,
+    -1px  1px 0 $color_1-night,
+     1px  1px 0 $color_1-night;
   }
 
 
@@ -334,6 +344,11 @@ header{
     // text-align: center;
     color: $color_1-light;
     margin: 0;
+    text-shadow:
+    -1px -1px 0 $color_1-night,
+     1px -1px 0 $color_1-night,
+    -1px  1px 0 $color_1-night,
+     1px  1px 0 $color_1-night;
   }
 
   p{
