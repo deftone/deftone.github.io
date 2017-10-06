@@ -46,24 +46,20 @@ main {
 /*** GENERAL: NAVIGATION ***/
 nav a {
   display: block;
-  background-color: #FB8C00;
-  color: #33691E;
+  background-color: #236E7F;
+  color: white;
   font-weight: bold;
   width: 11rem;
   padding: 8px 20px 8px 22px;
   border-radius: 1rem;
-  border: 1px solid #33691E;
+  border: 1px solid #38B0CC;
   margin-right: 1.5rem; }
   nav a:last-child {
     margin-right: 1.6rem; }
   nav a:hover {
-    background-color: #FB8C00;
-    color: #FFE0B2;
-    border: 1px solid #FFE0B2; }
+    background-color: #FFA54F; }
   nav a:active {
-    background-color: #FB8C00;
-    color: #993600;
-    border: 1px solid #993600; }
+    box-shadow: 0 0 1rem #B25D0B; }
 nav li {
   float: left; }
   nav li a {
@@ -99,7 +95,7 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #558B2F;
+  background-color: #38B0CC;
   height: 6rem;
   position: fixed;
   width: 100%;
@@ -112,8 +108,8 @@ header {
     height: 2.5rem;
     padding: .5rem;
     padding-left: 2rem;
-    color: #FFA726;
-    text-shadow: -1px -1px 0 #33691E, 1px -1px 0 #33691E, -1px 1px 0 #33691E, 1px 1px 0 #33691E; }
+    color: white;
+    text-shadow: -1px -1px 0 #236E7F, 1px -1px 0 #236E7F, -1px 1px 0 #236E7F, 1px 1px 0 #236E7F; }
 
 /*** JUMBOTRON ***/
 #jumbotron {
@@ -130,14 +126,14 @@ header {
   padding-top: 6rem;
   background-color: transparent; }
   #projects .container_project {
-    background-color: #FFA726; }
+    background-color: #92EAFF; }
   #projects .spezialFont {
-    background-color: #FFA726;
+    background-color: #92EAFF;
     padding: 2rem;
     padding-bottom: 3rem;
-    color: #33691E;
+    color: white;
     margin: 0;
-    text-shadow: -1px -1px 0 #9CCC65, 1px -1px 0 #9CCC65, -1px 1px 0 #9CCC65, 1px 1px 0 #9CCC65; }
+    text-shadow: -1px -1px 0 #236E7F, 1px -1px 0 #236E7F, -1px 1px 0 #236E7F, 1px 1px 0 #236E7F; }
   #projects .subcontainer_project {
     display: flex;
     justify-content: center;
@@ -151,10 +147,10 @@ header {
     border-radius: 1rem;
     width: 30%;
     margin: 0 1.6rem 3.6rem 1.6rem;
-    color: #33691E;
-    background-color: #7CB342;
+    color: #236E7F;
+    background-color: white;
     transition-duration: 1s;
-    border: 2px solid #33691E; }
+    border: 2px solid #236E7F; }
     #projects .container_project_box .container_image img {
       height: auto;
       width: auto;
@@ -165,11 +161,15 @@ header {
     #projects .container_project_box h2, #projects .container_project_box p {
       margin: 1rem .5rem 1rem 2rem;
       transition-duration: 1s; }
+    #projects .container_project_box p.go_button {
+      text-align: center;
+      padding: .5rem;
+      margin: 1rem;
+      border-radius: .5rem;
+      color: white;
+      background-color: #FFA54F; }
     #projects .container_project_box:hover {
-      background-color: #558B2F;
-      box-shadow: 0 0 15rem rgba(0, 0, 0, 0.9); }
-      #projects .container_project_box:hover h2, #projects .container_project_box:hover p {
-        color: white; }
+      box-shadow: 0 0 4rem #236E7F; }
 
 /*ABOUT ME*/
 #about {
@@ -178,14 +178,14 @@ header {
   padding-top: 6rem;
   background-color: transparent; }
   #about .container_about {
-    background-color: #FB8C00; }
+    background-color: #46DCFF; }
   #about .spezialFont {
-    background-color: #FB8C00;
+    background-color: #46DCFF;
     padding: 2rem;
     padding-bottom: 3rem;
-    color: #7CB342;
+    color: white;
     margin: 0;
-    text-shadow: -1px -1px 0 #33691E, 1px -1px 0 #33691E, -1px 1px 0 #33691E, 1px 1px 0 #33691E; }
+    text-shadow: -1px -1px 0 #236E7F, 1px -1px 0 #236E7F, -1px 1px 0 #236E7F, 1px 1px 0 #236E7F; }
   #about img {
     width: auto;
     height: auto;
@@ -201,13 +201,13 @@ header {
   padding-top: 6rem;
   background-color: transparent; }
   #contact .container_contact {
-    background-color: #E65100; }
+    background-color: #38B0CC; }
   #contact .spezialFont {
     padding: 2rem;
     padding-bottom: 3rem;
-    color: #9CCC65;
+    color: white;
     margin: 0;
-    text-shadow: -1px -1px 0 #33691E, 1px -1px 0 #33691E, -1px 1px 0 #33691E, 1px 1px 0 #33691E; }
+    text-shadow: -1px -1px 0 #236E7F, 1px -1px 0 #236E7F, -1px 1px 0 #236E7F, 1px 1px 0 #236E7F; }
   #contact p {
     font-size: 2rem; }
 
@@ -216,9 +216,9 @@ footer {
   align-items: center;
   justify-content: center;
   height: 8rem;
-  background-color: #993600; }
+  background-color: #49757F; }
   footer i {
-    color: #FFE0B2;
+    color: white;
     padding: 2rem; }
 
 /*# sourceMappingURL=style.css.map */

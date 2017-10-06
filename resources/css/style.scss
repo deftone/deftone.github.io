@@ -1,5 +1,15 @@
 // GENERAL: VARIABLES
 
+//colors: monochromatic (blue/grey):
+$color_1: #236E7F;
+$color_2: #49757F;
+$color_3: #38B0CC;
+$color_4: #46DCFF;
+$color_5: #92EAFF;
+
+$color_complementary: #FFA54F;
+$color_complementary_dark: #B25D0B;
+
 //colors
 //green
 // $color_1-light: hsl(120, 80%, 70%);
@@ -110,26 +120,22 @@ main{
 nav{
   a{
     display:block;
-    background-color: $color_2-medium;
-    color:$color_1-night;
+    background-color: $color-1;
+    color: white;
     font-weight: bold;
     width:11rem;
     padding:8px 20px 8px 22px;
     border-radius: 1rem;
-    border: 1px solid $color_1-night;
+    border: 1px solid $color-3;
     margin-right:1.5rem;
     &:last-child{
       margin-right: 1.6rem;
     }
     &:hover{
-      background-color: $color_2-medium;
-      color: $color_2-white;
-      border: 1px solid $color_2-white;
+      background-color: $color_complementary;
     }
     &:active{
-      background-color: $color_2-medium;
-      color: $color_2-night;
-      border: 1px solid $color_2-night;
+      box-shadow: 0 0 1rem $color_complementary_dark;
     }
   }
   li {
@@ -177,7 +183,7 @@ header{
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: $color_1-dark;
+  background-color: $color-3;
   height: 6rem;
   position: fixed;
   width: 100%;
@@ -191,12 +197,12 @@ header{
     height: 2.5rem;
     padding: .5rem;
     padding-left: 2rem;
-    color: $color_2-light;
+    color: white;
     text-shadow:
-    -1px -1px 0 $color_1-night,
-     1px -1px 0 $color_1-night,
-    -1px  1px 0 $color_1-night,
-     1px  1px 0 $color_1-night;
+    -1px -1px 0 $color-1,
+     1px -1px 0 $color-1,
+    -1px  1px 0 $color-1,
+     1px  1px 0 $color-1;
   }
 }
 
@@ -219,21 +225,21 @@ header{
   background-color: transparent;
 
   .container_project{
-    background-color: $color_2-light;
+    background-color: $color-5;
   }
 
   .spezialFont{
-    background-color: $color_2-light;
+    background-color: $color-5;
     padding: 2rem;
     padding-bottom: 3rem;
     // text-align: center;
-    color: $color_1-night;
+    color: white;
     margin: 0;
     text-shadow:
-    -1px -1px 0 $color_1-light,
-     1px -1px 0 $color_1-light,
-    -1px  1px 0 $color_1-light,
-     1px  1px 0 $color_1-light;
+    -1px -1px 0 $color-1,
+     1px -1px 0 $color-1,
+    -1px  1px 0 $color-1,
+     1px  1px 0 $color-1;
   }
 
   .subcontainer_project{
@@ -252,11 +258,10 @@ header{
     width: 30%;
     //margin outside the box
     margin: 0 1.6rem 3.6rem 1.6rem;
-    // color: $color_2-night;
-    color: $color_1-night;
-    background-color: $color_1-medium;
+    color: $color-1;
+    background-color: white;
     transition-duration: $duration_medium;
-    border: 2px solid $color_1-night;
+    border: 2px solid $color-1;
 
 
     .container_image{
@@ -273,12 +278,23 @@ header{
       margin: 1rem .5rem 1rem 2rem;
       transition-duration: $duration_medium;
     }
+    p.go_button{
+      text-align: center;
+      // display: inline-block;
+      padding: .5rem;
+      margin: 1rem;
+      border-radius: .5rem;
+      color: white;
+      background-color: $color_complementary;
+    }
+
     &:hover{
-      background-color: $color_1-dark;
-      box-shadow: 0 0 15rem rgba(0, 0, 0, 0.9);
-      h2,p{
-        color: white;
-      }
+      // background-color: $color_complementary;
+      // border: 2px solid $color_complementary_dark;
+      box-shadow: 0 0 4rem $color-1;
+      // h2,p{
+      //   color: white;
+      // }
     }
   }
 }
@@ -294,21 +310,21 @@ header{
   background-color: transparent;
 
   .container_about{
-    background-color: $color_2-medium;
+    background-color: $color-4;
   }
 
   .spezialFont{
-    background-color: $color_2-medium;
+    background-color: $color-4;
     padding: 2rem;
     padding-bottom: 3rem;
     // text-align: center;
-    color: $color_1-medium;
+    color: white;
     margin: 0;
     text-shadow:
-    -1px -1px 0 $color_1-night,
-     1px -1px 0 $color_1-night,
-    -1px  1px 0 $color_1-night,
-     1px  1px 0 $color_1-night;
+    -1px -1px 0 $color-1,
+     1px -1px 0 $color-1,
+    -1px  1px 0 $color-1,
+     1px  1px 0 $color-1;
   }
 
 
@@ -335,20 +351,20 @@ header{
   background-color: transparent;
 
   .container_contact{
-    background-color: $color_2-dark;
+    background-color: $color-3;
   }
 
   .spezialFont{
     padding: 2rem;
     padding-bottom: 3rem;
     // text-align: center;
-    color: $color_1-light;
+    color: white;
     margin: 0;
     text-shadow:
-    -1px -1px 0 $color_1-night,
-     1px -1px 0 $color_1-night,
-    -1px  1px 0 $color_1-night,
-     1px  1px 0 $color_1-night;
+    -1px -1px 0 $color-1,
+     1px -1px 0 $color-1,
+    -1px  1px 0 $color-1,
+     1px  1px 0 $color-1;
   }
 
   p{
@@ -362,10 +378,10 @@ footer{
   align-items: center;
   justify-content: center;
   height: 8rem;
-  background-color: $color_2-night;
+  background-color: $color-2;
 
   i{
-    color: $color_2-white;
+    color: white;
     padding: 2rem;
   }
 }
