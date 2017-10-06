@@ -46,20 +46,14 @@ main {
 /*** GENERAL: NAVIGATION ***/
 nav a {
   display: block;
-  background-color: #236E7F;
+  background-color: #38B0CC;
   color: white;
   font-weight: bold;
   width: 11rem;
-  padding: 8px 20px 8px 22px;
-  border-radius: 1rem;
-  border: 1px solid #38B0CC;
-  margin-right: 1.5rem; }
-  nav a:last-child {
-    margin-right: 1.6rem; }
+  padding: 2.1rem 1rem;
+  margin: 0; }
   nav a:hover {
     background-color: #FFA54F; }
-  nav a:active {
-    box-shadow: 0 0 1rem #B25D0B; }
 nav li {
   float: left; }
   nav li a {
@@ -68,7 +62,7 @@ nav li {
     float: none; }
     nav li li a {
       text-align: left;
-      border-top: none; }
+      padding: 1rem; }
 nav ul ul {
   display: none;
   position: absolute;
@@ -78,7 +72,7 @@ nav ul ul {
   i {
     padding: 1rem;
     padding-right: 2rem;
-    color: #FFA726;
+    color: white;
     cursor: pointer; }
 
   nav li {
