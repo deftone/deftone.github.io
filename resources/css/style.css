@@ -107,7 +107,7 @@ header {
 
 /*** JUMBOTRON ***/
 .jumbotron {
-  height: 44rem;
+  height: 60rem;
   padding-top: 10rem;
   text-align: center;
   background-size: cover;
@@ -117,20 +117,29 @@ header {
   text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px  1px 0 #000, 1px  1px 0 #000; }
   .jumbotron h1 {
     font-family: 'Pacifico', cursive;
-    font-size: 7.1rem; }
-  .jumbotron p {
-    width: 51.3rem;
+    font-size: 6rem;
+    padding: 2rem;
     margin: auto;
-    padding-bottom: 8rem; }
+    width: 60rem;
+    margin-top: 37rem;
+    margin-bottom: 2rem;
+    background-color: #38B0CC;
+    border-radius: 1rem; }
+  .jumbotron p {
+    width: 50rem;
+    font-size: 4rem;
+    margin: auto;
+    line-height: 4rem;
+    padding-bottom: 5rem; }
 
 .jumbotron-laptop {
-  background-image: url("../images/jumbotron_laptop.jpg"); }
+  background-image: url("../images/jumbotron_laptop-2.jpg"); }
 
 .jumbotron-spagat {
-  background-image: url("../images/jumbotron_spagat.jpg"); }
+  background-image: url("../images/jumbotron_spagat-2.jpg"); }
 
 .jumbotron-books {
-  background-image: url("../images/jumbotron_buecher.jpg"); }
+  background-image: url("../images/jumbotron_buecher-2.jpg"); }
 
 /*** PROJECTS ***/
 #projects {
