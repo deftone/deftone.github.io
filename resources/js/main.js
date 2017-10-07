@@ -15,4 +15,15 @@ $(document).ready(function() {
 		$('.menu_items').addClass('hidden');
 	});
 
+	//jumbotron carousel
+	$('.carousel').slick({
+	arrows: false,
+	autoplay: true,
+	autoplaySpeed: 2000,//4000,
+	slidesToScroll: 1,
+	pauseOnFocus: false,
+	pauseOnHover: false,
+	draggable: false
+	});
+
 });
