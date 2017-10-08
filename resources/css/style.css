@@ -169,8 +169,7 @@ header {
     align-items: flex-start;
     border-radius: 1rem;
     width: 30%;
-    margin: 0 1.6rem 3.6rem 1.6rem;
-    transition-duration: 1s; }
+    margin: 0 1.6rem 3.6rem 1.6rem; }
     #projects .container_project_box .container_image {
       overflow: hidden;
       border-radius: .5rem; }
