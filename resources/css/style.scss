@@ -1,7 +1,7 @@
 // GENERAL: VARIABLES
 
 //colors: monochromatic (blue/grey):
-$color_1: #236E7F;
+$color_1: #236E7F;  // TODO: make this darker!
 $color_2: #49757F;
 $color_3: #38B0CC;
 $color_4: #46DCFF;
@@ -9,36 +9,6 @@ $color_5: #92EAFF;
 
 $color_complementary: #FFA54F;
 $color_complementary_dark: #B25D0B;
-
-//colors
-//green
-// $color_1-light: hsl(120, 80%, 70%);
-// $color_1-medium: hsl(120, 100%, 40%);
-// $color_1-dark: hsl(120, 100%, 30%);
-// $color_1-night: hsl(120, 100%, 20%);
-$color_1-light: #9CCC65;
-$color_1-medium: #7CB342;
-$color_1-dark: #558B2F;
-$color_1-night: #33691E;
-
-
-//blue
-// $color_2-white: hsl(200,100%, 90%);
-// $color_2-light: hsl(200,100%, 70%);
-// $color_2-medium: hsl(200, 100%, 50%);
-// $color_2-dark: hsl(200, 100%, 35%);
-
-//orange
-// $color_2-white: hsl(36,100%, 90%);
-// $color_2-light: hsl(36,100%, 70%);
-// $color_2-medium: hsl(36, 100%, 50%);
-// $color_2-dark:  hsl(36, 100%, 35%);
-// $color_2-night: hsl(36, 100%, 20%);
-$color_2-white: #FFE0B2;
-$color_2-light: #FFA726;
-$color_2-medium: #FB8C00;
-$color_2-dark:  #E65100;
-$color_2-night: 	 #993600;
 
 
 //sizes
@@ -66,6 +36,18 @@ body{
 .spezialFont{
   font-family: 'Pacifico', cursive;
   // font-family: 'Lakki Reddy', cursive;
+  background-color: $color-3;
+  padding: 1rem;
+  padding-bottom: 2rem;
+  text-align: center;
+  color: white;
+  margin: 0;
+  margin-bottom: 2rem;
+  text-shadow:
+  -1px -1px 0 $color-1,
+   1px -1px 0 $color-1,
+  -1px  1px 0 $color-1,
+   1px  1px 0 $color-1;
 }
 
 a{
@@ -121,7 +103,7 @@ main{
 nav{
   a{
     display:block;
-    background-color: $color-3;
+    background-color: $color-4;
     color: white;
     font-weight: bold;
     width:11rem;
@@ -185,27 +167,27 @@ header{
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: $color-3;
+  background-color: $color-4;
   height: 6rem;
   position: fixed;
   width: 100%;
   z-index: 20;
-  border: 1px solid $color_1-dark;
+  border: 1px solid $color-2;
 
-  .spezialFont{
-    display: inline-block;
-    font-weight: bold;
-    font-size: 4rem;
-    height: 2.5rem;
-    padding: .5rem;
-    padding-left: 2rem;
-    color: white;
-    text-shadow:
-    -1px -1px 0 $color-1,
-     1px -1px 0 $color-1,
-    -1px  1px 0 $color-1,
-     1px  1px 0 $color-1;
-  }
+  // .spezialFont{
+  //   display: inline-block;
+  //   font-weight: bold;
+  //   font-size: 4rem;
+  //   height: 2.5rem;
+  //   padding: .5rem;
+  //   padding-left: 2rem;
+  //   color: white;
+  //   text-shadow:
+  //   -1px -1px 0 $color-1,
+  //    1px -1px 0 $color-1,
+  //   -1px  1px 0 $color-1,
+  //    1px  1px 0 $color-1;
+  // }
 }
 
 /*** JUMBOTRON ***/
@@ -218,16 +200,16 @@ header{
   background-repeat: no-repeat;
   color: white;
   text-shadow:
-    -1px -1px 0 #000,
-     1px -1px 0 #000,
-    -1px  1px 0 #000,
-     1px  1px 0 #000;
+    -1px -1px 0 $color-1,
+     1px -1px 0 $color-1,
+    -1px  1px 0 $color-1,
+     1px  1px 0 $color-1;
 
    h1 {
      font-family: 'Pacifico', cursive;
     //  text-transform: uppercase;
-     font-size: 6rem;
-     padding: 2rem;
+     font-size: 5rem;
+     padding: 1rem 0rem 2.5rem 0rem;
      margin: auto;
      width: 60rem;
      margin-top: 37rem;
@@ -267,22 +249,23 @@ header{
   background-color: transparent;
 
   .container_project{
-    background-color: $color-5;
+    // background-color: $color-5;
   }
 
-  .spezialFont{
-    background-color: $color-5;
-    padding: 2rem;
-    padding-bottom: 3rem;
-    // text-align: center;
-    color: white;
-    margin: 0;
-    text-shadow:
-    -1px -1px 0 $color-1,
-     1px -1px 0 $color-1,
-    -1px  1px 0 $color-1,
-     1px  1px 0 $color-1;
-  }
+  // .spezialFont{
+  //   background-color: $color-3;
+  //   padding: 1rem;
+  //   padding-bottom: 2rem;
+  //   text-align: center;
+  //   color: white;
+  //   margin: 0;
+  //   margin-bottom: 2rem;
+  //   text-shadow:
+  //   -1px -1px 0 $color-1,
+  //    1px -1px 0 $color-1,
+  //   -1px  1px 0 $color-1,
+  //    1px  1px 0 $color-1;
+  // }
 
   .subcontainer_project{
     display: flex;
@@ -300,44 +283,55 @@ header{
     width: 30%;
     //margin outside the box
     margin: 0 1.6rem 3.6rem 1.6rem;
-    color: $color-1;
-    background-color: white;
+    // color: $color-3;
+    // background-color: white;
     transition-duration: $duration_medium;
-    border: 2px solid $color-1;
+    // border: 2px solid $color-1;
 
 
     .container_image{
+      overflow: hidden;
       img{
         height: auto;
         width: auto;
         max-width: 100%;
         max-height: 100%;
-        border-radius: 1rem;
+        border-radius: .5rem;
         width: 100%;
       }
+
     }
+
+ img{
+   opacity: 0.7;
+   //es muss alles in einem angegeben werden, sonst ruckt es :(
+   transition: transform .8s, opacity .8s;
+
+   &:hover{
+     opacity: 1;
+     transform: scale(1.15, 1.15);
+   }
+ }
+
     h2, p{
+      color: $color_1;
       margin: 1rem .5rem 1rem 2rem;
-      transition-duration: $duration_medium;
     }
     p.go_button{
+      transition-duration: $duration_short;
       text-align: center;
-      // display: inline-block;
       padding: .5rem;
       margin: 1rem;
       border-radius: .5rem;
       color: white;
       background-color: $color_complementary;
+
+      &:hover{
+        box-shadow: 0 0 2rem $color-1;
+
+      }
     }
 
-    &:hover{
-      // background-color: $color_complementary;
-      // border: 2px solid $color_complementary_dark;
-      box-shadow: 0 0 4rem $color-1;
-      // h2,p{
-      //   color: white;
-      // }
-    }
   }
 }
 
@@ -352,22 +346,43 @@ header{
   background-color: transparent;
 
   .container_about{
-    background-color: $color-4;
+
+    .subcontainer_about{
+    display: flex;
+    align-items: flex-start;
+    // background-color: $color-4;
+    .pic{
+      width: 20%;
+      padding: 3rem;
+      img{
+        border-radius: 1rem;
+      }
+    }
+
+    .text{
+      width: 80%;
+      padding: 3rem;
+    }
+
+    a{
+      color: $color-2;
+    }
+  }
   }
 
-  .spezialFont{
-    background-color: $color-4;
-    padding: 2rem;
-    padding-bottom: 3rem;
-    // text-align: center;
-    color: white;
-    margin: 0;
-    text-shadow:
-    -1px -1px 0 $color-1,
-     1px -1px 0 $color-1,
-    -1px  1px 0 $color-1,
-     1px  1px 0 $color-1;
-  }
+  // .spezialFont{
+  //   background-color: $color-4;
+  //   padding: 2rem;
+  //   padding-bottom: 3rem;
+  //   // text-align: center;
+  //   color: white;
+  //   margin: 0;
+  //   text-shadow:
+  //   -1px -1px 0 $color-1,
+  //    1px -1px 0 $color-1,
+  //   -1px  1px 0 $color-1,
+  //    1px  1px 0 $color-1;
+  // }
 
 
   img{
@@ -396,18 +411,18 @@ header{
     background-color: $color-3;
   }
 
-  .spezialFont{
-    padding: 2rem;
-    padding-bottom: 3rem;
-    // text-align: center;
-    color: white;
-    margin: 0;
-    text-shadow:
-    -1px -1px 0 $color-1,
-     1px -1px 0 $color-1,
-    -1px  1px 0 $color-1,
-     1px  1px 0 $color-1;
-  }
+  // .spezialFont{
+  //   padding: 2rem;
+  //   padding-bottom: 3rem;
+  //   // text-align: center;
+  //   color: white;
+  //   margin: 0;
+  //   text-shadow:
+  //   -1px -1px 0 $color-1,
+  //    1px -1px 0 $color-1,
+  //   -1px  1px 0 $color-1,
+  //    1px  1px 0 $color-1;
+  // }
 
   p{
     // display: inline-block;
