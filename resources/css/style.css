@@ -5,7 +5,7 @@ body {
   font-family: 'Muli', Helvetica, sans-serif;
   font-size: 1.8rem; }
 
-.spezialFont {
+.spezialFont, header .logo {
   font-family: 'Pacifico', cursive;
   background-color: #38B0CC;
   padding: 1rem;
@@ -14,7 +14,7 @@ body {
   color: white;
   margin: 0;
   margin-bottom: 2rem;
-  text-shadow: -1px -1px 0 #236E7F, 1px -1px 0 #236E7F, -1px 1px 0 #236E7F, 1px 1px 0 #236E7F; }
+  text-shadow: -1px -1px 0 #236e7f, 1px -1px 0 #236e7f, -1px 1px 0 #236e7f, 1px 1px 0 #236e7f; }
 
 a {
   text-decoration: none; }
@@ -54,7 +54,7 @@ main {
 /*** GENERAL: NAVIGATION ***/
 nav a {
   display: block;
-  background-color: #46DCFF;
+  background-color: #38B0CC;
   color: white;
   font-weight: bold;
   width: 11rem;
@@ -97,12 +97,18 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #46DCFF;
+  background-color: #38B0CC;
   height: 6rem;
   position: fixed;
   width: 100%;
   z-index: 20;
   border: 1px solid #49757F; }
+  header .logo {
+    display: inline-block;
+    font-weight: bold;
+    font-size: 4rem;
+    height: 2.5rem;
+    padding: 3.5rem 2rem 2rem 2rem; }
 
 /*** JUMBOTRON ***/
 .jumbotron {
@@ -113,7 +119,7 @@ header {
   background-position: center;
   background-repeat: no-repeat;
   color: white;
-  text-shadow: -1px -1px 0 #236E7F, 1px -1px 0 #236E7F, -1px 1px 0 #236E7F, 1px 1px 0 #236E7F; }
+  text-shadow: -1px -1px 0 #236e7f, 1px -1px 0 #236e7f, -1px 1px 0 #236e7f, 1px 1px 0 #236e7f; }
   .jumbotron h1 {
     font-family: 'Pacifico', cursive;
     font-size: 5rem;
@@ -146,6 +152,8 @@ header {
   margin-top: -6rem;
   padding-top: 6rem;
   background-color: transparent; }
+  #projects .container_project {
+    background-color: #92EAFF; }
   #projects .subcontainer_project {
     display: flex;
     justify-content: center;
@@ -161,22 +169,26 @@ header {
     margin: 0 1.6rem 3.6rem 1.6rem;
     transition-duration: 1s; }
     #projects .container_project_box .container_image {
-      overflow: hidden; }
+      overflow: hidden;
+      border-radius: .5rem; }
       #projects .container_project_box .container_image img {
         height: auto;
         width: auto;
         max-width: 100%;
         max-height: 100%;
         border-radius: .5rem;
-        width: 100%; }
-    #projects .container_project_box img {
-      opacity: 0.7;
-      transition: transform .8s, opacity .8s; }
-      #projects .container_project_box img:hover {
-        opacity: 1;
-        transform: scale(1.15, 1.15); }
+        width: 100%;
+        opacity: 0.7;
+        transition: transform .8s, opacity .8s; }
+        #projects .container_project_box .container_image img:hover {
+          opacity: 1;
+          transform: scale(1.15, 1.15); }
+    #projects .container_project_box .project_info {
+      background-color: white;
+      margin-top: 2rem;
+      border-radius: .5rem; }
     #projects .container_project_box h2, #projects .container_project_box p {
-      color: #236E7F;
+      color: #236e7f;
       margin: 1rem .5rem 1rem 2rem; }
     #projects .container_project_box p.go_button {
       transition-duration: 0.5s;
@@ -187,7 +199,7 @@ header {
       color: white;
       background-color: #FFA54F; }
       #projects .container_project_box p.go_button:hover {
-        box-shadow: 0 0 2rem #236E7F; }
+        box-shadow: 0 0 2rem #236e7f; }
 
 /*ABOUT ME*/
 #about {
@@ -195,19 +207,22 @@ header {
   margin-top: -6rem;
   padding-top: 6rem;
   background-color: transparent; }
-  #about .container_about .subcontainer_about {
-    display: flex;
-    align-items: flex-start; }
-    #about .container_about .subcontainer_about .pic {
-      width: 20%;
-      padding: 3rem; }
-      #about .container_about .subcontainer_about .pic img {
-        border-radius: 1rem; }
-    #about .container_about .subcontainer_about .text {
-      width: 80%;
-      padding: 3rem; }
-    #about .container_about .subcontainer_about a {
-      color: #49757F; }
+  #about .container_about {
+    color: #236e7f; }
+    #about .container_about .subcontainer_about {
+      display: flex;
+      align-items: flex-start; }
+      #about .container_about .subcontainer_about .pic {
+        width: 20%;
+        padding: 3rem; }
+        #about .container_about .subcontainer_about .pic img {
+          border-radius: 1rem; }
+      #about .container_about .subcontainer_about .text {
+        color: #236e7f;
+        width: 80%;
+        padding: 3rem; }
+      #about .container_about .subcontainer_about a {
+        color: #49757F; }
   #about img {
     width: auto;
     height: auto;
