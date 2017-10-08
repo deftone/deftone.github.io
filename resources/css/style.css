@@ -7,14 +7,14 @@ body {
 
 .spezialFont, header .logo {
   font-family: 'Pacifico', cursive;
-  background-color: #38B0CC;
+  background-color: #319ab4;
   padding: 1rem;
   padding-bottom: 2rem;
   text-align: center;
   color: white;
   margin: 0;
   margin-bottom: 2rem;
-  text-shadow: -1px -1px 0 #236e7f, 1px -1px 0 #236e7f, -1px 1px 0 #236e7f, 1px 1px 0 #236e7f; }
+  text-shadow: -1px -1px 0 #1b5764, 1px -1px 0 #1b5764, -1px 1px 0 #1b5764, 1px 1px 0 #1b5764; }
 
 a {
   text-decoration: none; }
@@ -59,7 +59,8 @@ nav a {
   font-weight: bold;
   width: 11rem;
   padding: 2.1rem 1rem;
-  margin: 0; }
+  margin: 0;
+  text-shadow: -1px -1px 0 #1b5764, 1px -1px 0 #1b5764, -1px 1px 0 #1b5764, 1px 1px 0 #1b5764; }
   nav a:hover {
     background-color: #FFA54F; }
 nav li {
@@ -101,32 +102,34 @@ header {
   height: 6rem;
   position: fixed;
   width: 100%;
-  z-index: 20;
-  border: 1px solid #49757F; }
+  z-index: 20; }
   header .logo {
+    background-color: #FFA54F;
     display: inline-block;
     font-weight: bold;
     font-size: 4rem;
     height: 2.5rem;
-    padding: 3.5rem 2rem 2rem 2rem; }
+    padding: 3.5rem 2rem 2rem 2rem;
+    background-color: #FFA54F;
+    text-shadow: -1px -1px 0 #B25D0B, 1px -1px 0 #B25D0B, -1px 1px 0 #B25D0B, 1px 1px 0 #B25D0B; }
 
 /*** JUMBOTRON ***/
 .jumbotron {
-  height: 60rem;
+  height: 50rem;
   padding-top: 10rem;
   text-align: center;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   color: white;
-  text-shadow: -1px -1px 0 #236e7f, 1px -1px 0 #236e7f, -1px 1px 0 #236e7f, 1px 1px 0 #236e7f; }
+  text-shadow: -1px -1px 0 #1b5764, 1px -1px 0 #1b5764, -1px 1px 0 #1b5764, 1px 1px 0 #1b5764; }
   .jumbotron h1 {
     font-family: 'Pacifico', cursive;
-    font-size: 5rem;
-    padding: 1rem 0rem 2.5rem 0rem;
+    font-size: 4rem;
+    padding: .5rem 0rem 1.5rem 0rem;
     margin: auto;
-    width: 60rem;
-    margin-top: 37rem;
+    width: 50rem;
+    margin-top: 33rem;
     margin-bottom: 2rem;
     background-color: #38B0CC;
     border-radius: 1rem; }
@@ -153,7 +156,7 @@ header {
   padding-top: 6rem;
   background-color: transparent; }
   #projects .container_project {
-    background-color: #92EAFF; }
+    background-color: #d7eef4; }
   #projects .subcontainer_project {
     display: flex;
     justify-content: center;
@@ -188,7 +191,7 @@ header {
       margin-top: 2rem;
       border-radius: .5rem; }
     #projects .container_project_box h2, #projects .container_project_box p {
-      color: #236e7f;
+      color: #1b5764;
       margin: 1rem .5rem 1rem 2rem; }
     #projects .container_project_box p.go_button {
       transition-duration: 0.5s;
@@ -197,9 +200,10 @@ header {
       margin: 1rem;
       border-radius: .5rem;
       color: white;
-      background-color: #FFA54F; }
+      background-color: #FFA54F;
+      text-shadow: -1px -1px 0 #B25D0B, 1px -1px 0 #B25D0B, -1px 1px 0 #B25D0B, 1px 1px 0 #B25D0B; }
       #projects .container_project_box p.go_button:hover {
-        box-shadow: 0 0 2rem #236e7f; }
+        box-shadow: 0 0 2rem #1b5764; }
 
 /*ABOUT ME*/
 #about {
@@ -208,7 +212,8 @@ header {
   padding-top: 6rem;
   background-color: transparent; }
   #about .container_about {
-    color: #236e7f; }
+    color: #1b5764;
+    background-color: #d7eef4; }
     #about .container_about .subcontainer_about {
       display: flex;
       align-items: flex-start; }
@@ -218,11 +223,15 @@ header {
         #about .container_about .subcontainer_about .pic img {
           border-radius: 1rem; }
       #about .container_about .subcontainer_about .text {
-        color: #236e7f;
+        color: #1b5764;
         width: 80%;
-        padding: 3rem; }
+        padding: 3rem;
+        background-color: white;
+        border-radius: 1rem;
+        padding: 3rem;
+        margin: 3rem; }
       #about .container_about .subcontainer_about a {
-        color: #49757F; }
+        color: #B25D0B; }
   #about img {
     width: auto;
     height: auto;
@@ -238,16 +247,29 @@ header {
   padding-top: 6rem;
   background-color: transparent; }
   #contact .container_contact {
-    background-color: #38B0CC; }
+    background-color: #d7eef4;
+    color: #1b5764;
+    padding-bottom: 2rem; }
+  #contact .contact_info {
+    width: 42rem;
+    margin: auto;
+    background-color: white;
+    border-radius: 1rem; }
   #contact p {
-    font-size: 2rem; }
+    font-size: 2rem;
+    text-align: left;
+    padding: 2rem; }
+    #contact p span {
+      font-weight: bold; }
+    #contact p:last-child {
+      padding-bottom: 4rem; }
 
 footer {
   display: flex;
   align-items: center;
   justify-content: center;
   height: 8rem;
-  background-color: #49757F; }
+  background-color: #216778; }
   footer i {
     color: white;
     padding: 2rem; }
