@@ -262,7 +262,7 @@ header {
     #contact p span {
       font-weight: bold; }
     #contact p:last-child {
-      padding-bottom: 4rem; }
+      padding: 0rem 2rem 2rem 2rem; }
 
 footer {
   display: flex;
