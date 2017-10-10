@@ -41,8 +41,8 @@
           <i id="hidden_desktop"  class="menu_button fa fa-bars  fa-2x" aria-hidden="true"></i>
           <ul id="hidden_desktop" class="menu_items hidden">
       	    <li><a href="index.html">home</a></li>
-      	    <li><a href="#projects">projects</a> </li>
             <li><a href="#about">about me</a></li>
+      	    <li><a href="#projects">projects</a> </li>
             <li><a href="#contact">contact</a></li>
           </ul>
 
@@ -52,7 +52,7 @@
 
     <main>
 <!-- JUMBOTRON -->
-      <div class="carousel">
+      <div id="hidden_mobile" class="carousel">
         <div class="jumbotron jumbotron-laptop">
           <div>
             <h1>Get your own website</h1>
@@ -73,8 +73,16 @@
             <!-- <p>Learn something new everyday!</p> -->
             </div>
         </div>
-
       </div>
+
+      <div id="hidden_desktop">
+        <div class="jumbotron jumbotron-laptop">
+          <div>
+            <h1>Get your own website</h1>
+          </div>
+        </div>
+      </div>
+
 
       <!-- ABOUT       -->
       <section id="about">
@@ -88,7 +96,7 @@
             Welcome to my webpage <i class="fa fa-smile-o" aria-hidden="true"></i>
             <br>
             <br>
-            Due to my job as software developer, I came in contact with HTML and CSS. First I taught myself some basics
+            Due to my job as software developer I came in contact with HTML and CSS. First I taught myself some basics
             with the popular <a target="_blank" href="http://headfirstlabs.com/"> head first </a> series. In order to
             get rid of templates to make great websites, I took a course at
             <a target="_blank" href = "https://www.codecademy.com/"> codecademy</a>.
@@ -98,9 +106,9 @@
             <br><br>
 
             For this website, I used no template, no
-            <a target="_blank" href="http://getbootstrap.com/"> bootstrap</a>
-            , just <a target="_blank" href="https://www.w3schools.com/html/html5_intro.asp">HTML5</a>
-            , <a target="_blank" href="https://www.w3schools.com/css/css3_intro.asp"> CSS3 </a> with
+            <a target="_blank" href="http://getbootstrap.com/"> bootstrap</a>,
+            just <a target="_blank" href="https://www.w3schools.com/html/html5_intro.asp">HTML5</a>,
+            <a target="_blank" href="https://www.w3schools.com/css/css3_intro.asp"> CSS3 </a> with
             <a target="_blank" href="http://sass-lang.com/"> Sass </a> and of course some
             <a target="_blank" href="https://jquery.com/"> jQuery</a>.
           </p>
@@ -115,87 +123,87 @@
           <div class="subcontainer_project">
 
             <div class="container_project_box">
-              <div class="container_image"  id="hidden_mobile" role="presentation">
-                <img src="resources/images/matchgame2.jpg" alt="" role="img">
-              </div>
-              <div class="project_info">
-                <h2> Match Game</h2>
-                <p> HTML, JQUERY, JAVASCRIPT </p>
-                <p> Simple memory game: interactive and responsive website using the bootstrap framework.</p>
-                <a target="_blank" href="https://deftone.github.io/21_matchgame">
+              <a target="_blank" href="https://deftone.github.io/21_matchgame">
+                <div class="container_image"  id="hidden_mobile" role="presentation">
+                  <img src="resources/images/matchgame2.jpg" alt="" role="img">
+                </div>
+                <div class="project_info">
+                  <h2> Match Game</h2>
+                  <p> HTML, JQUERY, JAVASCRIPT </p>
+                  <p> Simple memory game: interactive and responsive website using the bootstrap framework.</p>
                   <p class="go_button"> Go to project </p>
-                </a>
-              </div>
+                </div>
+              </a>
             </div>
 
             <div class="container_project_box">
-              <div class="container_image"  id="hidden_mobile" role="presentation">
-                <img src="resources/images/trackster.jpg" alt="" role="img">
-              </div>
-              <div class="project_info">
-                <h2> Trackster</h2>
-                <p> HTML, JQUERY, AJAX </p>
-                <p> Music search plattform for desktop and tablets using the last.fm api and the bootstrap framework.</p>
-                <a  target="_blank" href="https://deftone.github.io/22_trackster">
+              <a  target="_blank" href="https://deftone.github.io/22_trackster">
+                <div class="container_image"  id="hidden_mobile" role="presentation">
+                  <img src="resources/images/trackster.jpg" alt="" role="img">
+                </div>
+                <div class="project_info">
+                  <h2> Trackster</h2>
+                  <p> HTML, JQUERY, AJAX </p>
+                  <p> Music search plattform for desktop and tablets using the last.fm api and the bootstrap framework.</p>
                   <p class="go_button"> Go to project </p>
-                </a>
-              </div>
+                </div>
+              </a>
             </div>
 
             <div class="container_project_box">
-              <div class="container_image"  id="hidden_mobile" role="presentation">
-                <img src="resources/images/jumpstart.jpg" alt="" role="img">
-              </div>
-              <div class="project_info">
-                <h2> Jumpstart</h2>
-                <p> HTML, JQUERY </p>
-                <p> Resonsive website with some cool CSS/JQuery animations using the bootstrap framework.</p>
-                <a target="_blank" href="https://deftone.github.io/23_jumpstart">
+              <a target="_blank" href="https://deftone.github.io/23_jumpstart">
+                <div class="container_image"  id="hidden_mobile" role="presentation">
+                  <img src="resources/images/jumpstart.jpg" alt="" role="img">
+                </div>
+                <div class="project_info">
+                  <h2> Jumpstart</h2>
+                  <p> HTML, JQUERY </p>
+                  <p> Resonsive website with some cool CSS/JQuery animations using the bootstrap framework.</p>
                   <p class="go_button"> Go to project </p>
-                </a>
-              </div>
+                </div>
+              </a>
             </div>
 
             <div class="container_project_box">
-              <div class="container_image"  id="hidden_mobile" role="presentation">
-                <img src="resources/images/capstone3.jpg" alt="" role="img">
-              </div>
-              <div class="project_info">
-                <h2> Colmar Academy</h2>
-                <p> HTML, CSS </p>
-                <p> Responsive website with pure HTML5 and CSS3 (boxmodel and flexbox) </p>
-                <a target="_blank" href="https://deftone.github.io/18_capstone">
+              <a target="_blank" href="https://deftone.github.io/18_capstone">
+                <div class="container_image"  id="hidden_mobile" role="presentation">
+                  <img src="resources/images/capstone3.jpg" alt="" role="img">
+                </div>
+                <div class="project_info">
+                  <h2> Colmar Academy</h2>
+                  <p> HTML, CSS </p>
+                  <p> Responsive website with pure HTML5 and CSS3 (boxmodel and flexbox) </p>
                   <p class="go_button"> Go to project </p>
-                </a>
-              </div>
+                </div>
+              </a>
             </div>
 
             <div class="container_project_box">
-              <div class="container_image"  id="hidden_mobile" role="presentation">
-                <img src="resources/images/secretAgent.jpg" alt="" role="img">
-              </div>
-              <div class="project_info">
-                <h2>Secret Agent Supply</h2>
-                <p> HTML, CSS </p>
-                <p> Responsive website with pure HTML5 and CSS3 (boxmodel and flexbox) </p>
-                <a target="_blank" href="https://deftone.github.io/15_SecretAgentFlexbox">
+              <a target="_blank" href="https://deftone.github.io/15_SecretAgentFlexbox">
+                <div class="container_image"  id="hidden_mobile" role="presentation">
+                  <img src="resources/images/secretAgent.jpg" alt="" role="img">
+                </div>
+                <div class="project_info">
+                  <h2>Secret Agent Supply</h2>
+                  <p> HTML, CSS </p>
+                  <p> Responsive website with pure HTML5 and CSS3 (boxmodel and flexbox) </p>
                   <p class="go_button"> Go to project </p>
-                </a>
-              </div>
+                </div>
+              </a>
             </div>
 
             <div class="container_project_box">
-              <div class="container_image"  id="hidden_mobile" role="presentation">
-                <img src="resources/images/myTimes.jpg" alt="" role="img">
-              </div>
-              <div class="project_info">
-                <h2> My Times</h2>
-                <p> HTML, CSS </p>
-                <p> Basic HTML5 and CSS3  (boxmodel and flexbox) for Desktop newspaper website</p>
-                <a target="_blank" href="https://deftone.github.io/11_myTimes">
+              <a target="_blank" href="https://deftone.github.io/11_myTimes">
+                <div class="container_image"  id="hidden_mobile" role="presentation">
+                  <img src="resources/images/myTimes.jpg" alt="" role="img">
+                </div>
+                <div class="project_info">
+                  <h2> My Times</h2>
+                  <p> HTML, CSS </p>
+                  <p> Basic HTML5 and CSS3  (boxmodel and flexbox) for Desktop newspaper site</p>
                   <p class="go_button"> Go to project </p>
-                </a>
-              </div>
+                </div>
+              </a>
             </div>
 
           </div>
@@ -207,17 +215,17 @@
         <div class="container_contact">
           <h1 class="spezialFont" role="heading"> contact </h1>
           <div class="contact_info">
-            <p>
+            <div>
               <i class="fa fa-envelope" aria-hidden="true"></i>
               <span> email: </span>
-              deftone.webdev@gmail.com
-            </p>
+              <p> deftone.webdev@gmail.com </p>
+            </div>
 
-            <p>
+            <div>
               <i class="fa fa-whatsapp" aria-hidden="true"></i>
               <span> whatsapp: </span>
-              +49 152 56193100
-            </p>
+              <p> +49 152 56193100 </p>
+            </div>
           </div>
       </section>
 
